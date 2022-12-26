@@ -8,6 +8,7 @@ function Navigation() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
+        {/* tes */}
         <LinkContainer to="/">
           <Navbar.Brand href="#home">Ecomern</Navbar.Brand>
         </LinkContainer>
