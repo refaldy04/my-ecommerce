@@ -2,37 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup-image-container,
+.login-image-container {
+  background-image: url(https://images.unsplash.com/photo-1612690669207-fed642192c40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaHxlbnwwfDF8MHx3aGl0ZXw%3D&auto=format&fit=crop&w=800&q=60);
+  height: 100vh;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* @media screen and (max-width: 756px) {
+  .signup-image-container,
+  .login-image-container {
+    display: none;
   }
+} */
+
+/* Home Page */
+.home-page {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-banner {
+  max-width: 100vw;
+  height: auto;
+}
+
+.category-tile {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border: none !important;
+  width: 15rem !important;
+}
+img.card-img-top.product-preview-img {
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-tile:hover {
+  transform: scale(1.05);
+  overflow-x: hidden;
+}
+
+.sale-banner-container img {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
 }
